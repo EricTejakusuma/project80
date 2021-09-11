@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project80</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>Guest List</h1>
+        <input type="text" placeholder="Search Name" id="s1">
+        <br>
+        <input type="button" onclick="searchfunction()" id="buttonsearch" value="Search">
+        <hr>
+        <h3 id="textsearch"></h3>
+       
+       
+       <script>
+
+         var search=[""];
+        
+         function searchfunction() {
+    var t=("");
+    t=document.getElementById("s1").value;
+    search=search+"<br>"+t;
+   document.getElementById("textsearch").innerHTML=search;
+}   
+        </script>
+    </body>
+</html>
